@@ -1,1 +1,1 @@
-# top-rps
+The Odin Project Challenge - Rock-Paper-Scissors game in the console
