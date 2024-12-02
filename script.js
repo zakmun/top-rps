@@ -3,14 +3,14 @@ const p = "paper";
 const s = "Scissors"
 
 
-function getComputerChoice(rps) {
+function getComputerChoice(randNum) {
 
-    randrps = Math.floor(Math.random() * rps)
-    console.log(randrps)
+    cpuRand = Math.floor(Math.random() * randNum)
+    console.log(cpuRand)
 
-    if (randrps === 0) {
+    if (cpuRand === 0) {
         return (r);
-    } else if (randrps === 1) {
+    } else if (cpuRand === 1) {
         return (p);
     } else  {
         return (s);
