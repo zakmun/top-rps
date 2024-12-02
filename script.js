@@ -9,33 +9,32 @@ let computerScore = 0;
 function getComputerChoice(randNum) {
 
     cpuRand = Math.floor(Math.random() * randNum)
-    console.log(cpuRand)
 
     if (cpuRand === 0) {
-        return (r);
+        console.log((r));
     } else if (cpuRand === 1) {
-        return (p);
+        console.log((p));
     } else  {
-        return (s);
+        console.log((s));
     }
     
 }
 
-console.log(getComputerChoice(3))
+getComputerChoice(3)
 
 
 
 
 
 
-// function getHumanChoice() {
+function getHumanChoice() {
 
-//     const selectRPS = prompt('Type Rock, Paper or Scissors')
-//     console.log(selectRPS)
-// }
+    const selectRPS = prompt('Type Rock, Paper or Scissors')
+    console.log(selectRPS)
+}
 
-// getHumanChoice();
+getHumanChoice();
 
 function playRound(humanChoice, computerChoice) {
-
+    
 }
