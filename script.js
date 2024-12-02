@@ -5,9 +5,15 @@ const s = "Scissors"
 
 function getComputerChoice(rps) {
 
-randrps = Math.floor(Math.random() * rps)
+    randrps = Math.floor(Math.random() * rps)
 
- 
+    if (randrps == 0) {
+        return (r);
+    } else if (rps == 1) {
+        return (p);
+    } else {
+        return (s);
+    }
+
     
 }
-
