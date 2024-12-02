@@ -28,10 +28,14 @@ console.log(getComputerChoice(3))
 
 
 
-function getHumanChoice() {
+// function getHumanChoice() {
 
-    const selectRPS = prompt('Type Rock, Paper or Scissors')
-    console.log(selectRPS)
+//     const selectRPS = prompt('Type Rock, Paper or Scissors')
+//     console.log(selectRPS)
+// }
+
+// getHumanChoice();
+
+function playRound(humanChoice, computerChoice) {
+
 }
-
-getHumanChoice();
