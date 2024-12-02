@@ -14,6 +14,7 @@ function getComputerChoice(rps) {
     } else {
         return (s);
     }
-
     
 }
+
+console.log(getComputerChoice(3))
