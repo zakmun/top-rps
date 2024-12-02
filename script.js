@@ -24,11 +24,11 @@ console.log(getComputerChoice(3))
 
 
 
-const selectRPS = prompt('Type Rock, Paper or Scissors')
 
 function getHumanChoice() {
     
-    return selectRPS
+    const selectRPS = prompt('Type Rock, Paper or Scissors')
+    console.log(selectRPS)
 }
 
-console.log(selectRPS)
+getHumanChoice();
