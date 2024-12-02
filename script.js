@@ -4,6 +4,10 @@ const s = "Scissors"
 
 
 function getComputerChoice(rps) {
+
+randrps = Math.floor(Math.random() * rps)
+
+ 
     
 }
 
