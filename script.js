@@ -2,6 +2,9 @@ const r = "rock";
 const p = "paper";
 const s = "Scissors"
 
+let humanScore = 0;
+let computerScore = 0;
+
 
 function getComputerChoice(randNum) {
 
@@ -26,7 +29,7 @@ console.log(getComputerChoice(3))
 
 
 function getHumanChoice() {
-    
+
     const selectRPS = prompt('Type Rock, Paper or Scissors')
     console.log(selectRPS)
 }
