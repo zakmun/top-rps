@@ -6,6 +6,16 @@ let humanScore = 0;
 let computerScore = 0;
 
 
+
+
+function playRound(humanChoice, computerChoice) {
+    getComputerChoice(3);
+    getHumanChoice();
+}
+
+playRound()
+
+// Computer coice to output r,p,s randomly
 function getComputerChoice(randNum) {
 
     cpuRand = Math.floor(Math.random() * randNum)
@@ -20,21 +30,10 @@ function getComputerChoice(randNum) {
     
 }
 
-getComputerChoice(3)
 
-
-
-
-
-
+// Human choice to select r,p,s
 function getHumanChoice() {
 
     const selectRPS = prompt('Type Rock, Paper or Scissors')
     console.log(selectRPS)
-}
-
-getHumanChoice();
-
-function playRound(humanChoice, computerChoice) {
-    
 }
