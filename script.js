@@ -20,6 +20,15 @@ function getComputerChoice(randNum) {
 
 console.log(getComputerChoice(3))
 
-const selectRPS = prompt('Type Rock, Paper or Scissors')
-console.log(selectRPS);
 
+
+
+
+const selectRPS = prompt('Type Rock, Paper or Scissors')
+
+function getHumanChoice() {
+    
+    return selectRPS
+}
+
+console.log(selectRPS)
