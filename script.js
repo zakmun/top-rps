@@ -7,10 +7,17 @@ let computerScore = 0;
 
 
 
-
+// Playing a single round
 function playRound(humanChoice, computerChoice) {
 
-   
+    
+        // if (humanChoice === r && computerChoice === s) {
+        //     console.log(++humanScore)
+        //     console.log(humanScore)
+        // } else {
+        //     console.log(++computerScore) 
+        //     console.log(computerScore)
+        // } 
     
   }
   
@@ -21,19 +28,20 @@ function playRound(humanChoice, computerChoice) {
   
 
 // Computer coice to output r,p,s randomly
-function getComputerChoice(randNum) {
+function getComputerChoice(maxNum) {
 
-    cpuRand = Math.floor(Math.random() * randNum)
+    cpuRand = Math.floor(Math.random() * maxNum)
 
     if (cpuRand === 0) {
-        console.log((r));
+        return r
     } else if (cpuRand === 1) {
-        console.log((p));
+        return p
     } else  {
-        console.log((s));
+        return s
     }
     
 }
+console.log(getComputerChoice(3))
 
 
 
