@@ -9,13 +9,15 @@ let computerScore = 0;
 
 
 function playRound(humanChoice, computerChoice) {
+
+   
     
   }
   
-  const humanSelection = getHumanChoice();
-  const computerSelection = getComputerChoice();
+  const humanChoice = getHumanChoice();
+  const computerChoice = getComputerChoice(3);
   
-  playRound(humanSelection, computerSelection);
+  playRound(humanChoice, computerChoice);
   
 
 // Computer coice to output r,p,s randomly
@@ -32,6 +34,7 @@ function getComputerChoice(randNum) {
     }
     
 }
+
 
 
 // Human choice to select r,p,s
