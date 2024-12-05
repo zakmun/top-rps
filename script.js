@@ -7,24 +7,18 @@ let computerScore = 0;
 
 
 
-// Playing a single round
-function playRound(humanChoice, computerChoice) {
+// // Playing a single round
+// function playRound(humanChoice, computerChoice) {
 
     
-        // if (humanChoice === r && computerChoice === s) {
-        //     console.log(++humanScore)
-        //     console.log(humanScore)
-        // } else {
-        //     console.log(++computerScore) 
-        //     console.log(computerScore)
-        // } 
+       
     
-  }
+//   }
   
-  const humanChoice = getHumanChoice();
-  const computerChoice = getComputerChoice(3);
+//   const humanChoice = getHumanChoice();
+//   const computerChoice = getComputerChoice(3);
   
-  playRound(humanChoice, computerChoice);
+//   playRound(humanChoice, computerChoice);
   
 
 // Computer coice to output r,p,s randomly
@@ -48,6 +42,16 @@ console.log(getComputerChoice(3))
 // Human choice to select r,p,s
 function getHumanChoice() {
 
-    const selectRPS = prompt('Type Rock, Paper or Scissors')
-    console.log(selectRPS)
+    const humanPrompt = prompt('Type Rock, Paper or Scissors')
+    
+    if (humanPrompt === 'Rock') {
+        return 'Rock'
+    } else if (humanPrompt === 'Paper') {
+        return 'Paper'
+    } else if (humanPrompt === 'Scissors') {
+        return 'Scissors'
+    } else {
+        return alert("Please choose the correct option")
+    }
 }
+getHumanChoice()
