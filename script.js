@@ -7,7 +7,7 @@ let computerScore = 0;
 
 
 
-// // Playing a single round
+// Playing a single round
 // function playRound(humanChoice, computerChoice) {
 
     
@@ -42,16 +42,17 @@ console.log(getComputerChoice(3))
 // Human choice to select r,p,s
 function getHumanChoice() {
 
-    const humanPrompt = prompt('Type Rock, Paper or Scissors')
-    
-    if (humanPrompt === 'Rock') {
-        return 'Rock'
-    } else if (humanPrompt === 'Paper') {
-        return 'Paper'
-    } else if (humanPrompt === 'Scissors') {
-        return 'Scissors'
+    const humanSelects = prompt("Choose your options: Rock, Paper, Scissors").toLowerCase();
+    if (humanSelects === 'rock') {
+        console.log(humanSelects)
+    } else if (humanSelects === 'paper') {
+        console.log(humanSelects)
+    } else if (humanSelects === 'scissors') {
+        console.log(humanSelects) 
     } else {
-        return alert("Please choose the correct option")
+        getHumanChoice()
     }
+    
 }
+
 getHumanChoice()
