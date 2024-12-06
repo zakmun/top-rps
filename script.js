@@ -8,18 +8,13 @@ let computerScore = 0;
 
 
 // Playing a single round
-// function playRound(humanChoice, computerChoice) {
+function playRound (humanChoice, computerChoice) {
+getComputerChoice(3)
+getHumanChoice()
 
     
-       
-    
-//   }
-  
-//   const humanChoice = getHumanChoice();
-//   const computerChoice = getComputerChoice(3);
-  
-//   playRound(humanChoice, computerChoice);
-  
+}
+
 
 // Computer coice to output r,p,s randomly
 function getComputerChoice(maxNum) {
