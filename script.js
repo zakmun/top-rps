@@ -28,6 +28,8 @@ function playRound (humanChoice, computerChoice) {
     } else if (humanChoice === 'paper' && computerChoice === 2){
         console.log(`${++computerScore} point to computer`)
         console.log('You lose. scissors beats paper')
+    } else {
+        console.log('It\'s a tie');
      }
          
 }
