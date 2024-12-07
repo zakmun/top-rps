@@ -1,6 +1,6 @@
 const r = "rock";
 const p = "paper";
-const s = "Scissors"
+const s = "scissors"
 
 let humanScore = 0;
 let computerScore = 0;
@@ -8,13 +8,24 @@ let computerScore = 0;
 
 
 // Playing a single round
-function playRound (humanChoice, computerChoice) {
-getComputerChoice(3)
-getHumanChoice()
+// function playRound (humanChoice, computerChoice) {
 
+//     console.log(getComputerChoice(3))
+//     getHumanChoice()
+
+//     if (humanChoice === 'rock' && computerChoice === s) {
+//         console.log(++humanScore)
+//     } else if (humanChoice === 'scissors' && computerChoice === r) {
+//         console.log(++humanScore)
+//     } else if (humanChoice === 'paper' && computerChoice === p) {
+//         console.log('no point')
+//     } else {
+//         console.log
+//     }
     
-}
+// }
 
+playRound()
 
 // Computer coice to output r,p,s randomly
 function getComputerChoice(maxNum) {
@@ -30,7 +41,7 @@ function getComputerChoice(maxNum) {
     }
     
 }
-console.log(getComputerChoice(3))
+
 
 
 
@@ -39,15 +50,14 @@ function getHumanChoice() {
 
     const humanSelects = prompt("Choose your options: Rock, Paper, Scissors").toLowerCase();
     if (humanSelects === 'rock') {
-        console.log(humanSelects)
+        console.log(`You have chosen: ${humanSelects}`)
     } else if (humanSelects === 'paper') {
-        console.log(humanSelects)
+        console.log(`You have chosen: ${humanSelects}`)
     } else if (humanSelects === 'scissors') {
-        console.log(humanSelects) 
+        console.log(`You have chosen: ${humanSelects}`) 
     } else {
         getHumanChoice()
     }
     
 }
 
-getHumanChoice()
