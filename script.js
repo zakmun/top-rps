@@ -8,24 +8,18 @@ let computerScore = 0;
 
 
 // Playing a single round
-// function playRound (humanChoice, computerChoice) {
+function playRound (humanChoice, computerChoice) {
 
-//     console.log(getComputerChoice(3))
-//     getHumanChoice()
-
-//     if (humanChoice === 'rock' && computerChoice === s) {
-//         console.log(++humanScore)
-//     } else if (humanChoice === 'scissors' && computerChoice === r) {
-//         console.log(++humanScore)
-//     } else if (humanChoice === 'paper' && computerChoice === p) {
-//         console.log('no point')
-//     } else {
-//         console.log
-//     }
+   
     
-// }
+    
+   
+}
 
-// playRound()
+const humanChoice = getHumanChoice()
+const computerChoice = getComputerChoice()
+
+playRound(humanChoice, computerChoice)
 
 // Computer coice to output r,p,s randomly
 function getComputerChoice(maxNum) {
@@ -41,7 +35,7 @@ function getComputerChoice(maxNum) {
     }
     
 }
-getComputerChoice()
+
 
 
 
@@ -61,5 +55,3 @@ function getHumanChoice() {
     }
     
 }
-
-getHumanChoice()
