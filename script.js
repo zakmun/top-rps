@@ -8,20 +8,20 @@ let computerScore = 0;
 
 
 // Playing a single round
-// function playRound (humanChoice, computerChoice) {
+function playRound (humanChoice, computerChoice) {
 
-//     if (humanChoice === 'rock' && computerChoice === 0){
-//         console.log('It\'s a tie. No point awarded.') 
-//     } else {
-//         console.log(++humanScore)
-//     }
+    if (humanChoice === 'rock' && computerChoice === 0){
+        console.log('It\'s a tie. No point awarded.') 
+    } else {
+        console.log(++humanScore)
+    }
          
-// }
+}
 
-// const humanChoice = getHumanChoice()
-// const computerChoice = getComputerChoice(3)
+const humanChoice = getHumanChoice()
+const computerChoice = getComputerChoice(3)
 
-// playRound(humanChoice, computerChoice)
+playRound(humanChoice, computerChoice)
 
 // Computer coice to output r,p,s randomly
 function getComputerChoice(maxNum) {
