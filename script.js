@@ -1,6 +1,6 @@
 const r = "rock";
 const p = "paper";
-const s = "scissors"
+const s = "scissors";
 
 let humanScore = 0;
 let computerScore = 0;
@@ -8,18 +8,20 @@ let computerScore = 0;
 
 
 // Playing a single round
-function playRound (humanChoice, computerChoice) {
+// function playRound (humanChoice, computerChoice) {
 
-   
-    
-    
-   
-}
+//     if (humanChoice === 'rock' && computerChoice === 0){
+//         console.log('It\'s a tie. No point awarded.') 
+//     } else {
+//         console.log(++humanScore)
+//     }
+         
+// }
 
-const humanChoice = getHumanChoice()
-const computerChoice = getComputerChoice()
+// const humanChoice = getHumanChoice()
+// const computerChoice = getComputerChoice(3)
 
-playRound(humanChoice, computerChoice)
+// playRound(humanChoice, computerChoice)
 
 // Computer coice to output r,p,s randomly
 function getComputerChoice(maxNum) {
@@ -34,6 +36,7 @@ function getComputerChoice(maxNum) {
         console.log(`Computer has chosen: ${s}`) 
     }
     
+    return cpuRand;
 }
 
 
@@ -53,5 +56,7 @@ function getHumanChoice() {
     } else {
         getHumanChoice()
     }
+
+    return humanSelects;
     
 }
