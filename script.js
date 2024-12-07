@@ -10,10 +10,17 @@ let computerScore = 0;
 // Playing a single round
 function playRound (humanChoice, computerChoice) {
 
-    if (humanChoice === 'rock' && computerChoice === 0){
-        console.log('It\'s a tie. No point awarded.') 
+    if (humanChoice === 'rock' && computerChoice === 2){
+        console.log(`${++humanScore} point to human`);
+        console.log('You win. rock beats scissors')
+    } else if (humanChoice === 'paper' && computerChoice === 0){
+        console.log(`${++humanScore} point to human`)
+        console.log('You win. paper beats rock')
+    } else if (humanChoice === 'scissors' && computerChoice === 1){
+        console.log(`${++humanScore} point to human`)
+        console.log('You win. scissors beats paper')
     } else {
-        console.log(++humanScore)
+        console.log(++computerScore)
     }
          
 }
