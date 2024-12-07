@@ -5,7 +5,10 @@ const s = "scissors";
 let humanScore = 0;
 let computerScore = 0;
 
-
+// Playing entire game (5 rounds)
+function playGame() {
+    
+}
 
 // Playing a single round
 function playRound (humanChoice, computerChoice) {
