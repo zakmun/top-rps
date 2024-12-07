@@ -25,7 +25,7 @@ let computerScore = 0;
     
 // }
 
-playRound()
+// playRound()
 
 // Computer coice to output r,p,s randomly
 function getComputerChoice(maxNum) {
@@ -33,14 +33,15 @@ function getComputerChoice(maxNum) {
     cpuRand = Math.floor(Math.random() * maxNum)
 
     if (cpuRand === 0) {
-        return r
+        console.log(`Computer has chosen: ${r}`) 
     } else if (cpuRand === 1) {
-        return p
+        console.log(`Computer has chosen: ${p}`) 
     } else  {
-        return s
+        console.log(`Computer has chosen: ${s}`) 
     }
     
 }
+getComputerChoice()
 
 
 
@@ -61,3 +62,4 @@ function getHumanChoice() {
     
 }
 
+getHumanChoice()
