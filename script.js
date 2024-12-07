@@ -19,9 +19,16 @@ function playRound (humanChoice, computerChoice) {
     } else if (humanChoice === 'scissors' && computerChoice === 1){
         console.log(`${++humanScore} point to human`)
         console.log('You win. scissors beats paper')
-    } else {
-        console.log(++computerScore)
-    }
+    } else if (humanChoice === 'scissors' && computerChoice === 0){
+        console.log(`${++computerScore} point to computer`);
+        console.log('You lose. rock beats scissors')
+    } else if (humanChoice === 'rock' && computerChoice === 1){
+        console.log(`${++computerScore} point to computer`)
+        console.log('You lose. paper beats rock')
+    } else if (humanChoice === 'paper' && computerChoice === 2){
+        console.log(`${++computerScore} point to computer`)
+        console.log('You lose. scissors beats paper')
+     }
          
 }
 
