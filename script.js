@@ -17,7 +17,9 @@ function playGame(roundNo) {
 }
 
 
-playGame()
+const humanChoice = getHumanChoice()
+const computerChoice = getComputerChoice()
+playGame(playRound(humanChoice, computerChoice))
 
 
 
@@ -51,9 +53,6 @@ function playRound (humanChoice, computerChoice) {
     
 }
 
-const humanChoice = getHumanChoice()
-const computerChoice = getComputerChoice()
-playRound(humanChoice, computerChoice)
 
 
 // Computer coice to output r,p,s randomly
