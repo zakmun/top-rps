@@ -15,7 +15,7 @@ function playGame() {
 
 }
 
-
+const fiveRounds = playRound()
 const humanChoice = getHumanChoice()
 const computerChoice = getComputerChoice()
 playGame(playRound(humanChoice, computerChoice))
