@@ -6,20 +6,44 @@ let humanScore = 0;
 let computerScore = 0;
 
 
+// Computer coice to output r,p,s randomly
+function getComputerChoice() {
 
-// Playing entire game (5 rounds)
-function playGame() {
+    cpuRand = Math.floor(Math.random() * 3)
+
+    if (cpuRand === 0) {
+        console.log(`Computer has chosen: ${r}`) 
+        return r
+    } else if (cpuRand === 1) {
+        console.log(`Computer has chosen: ${p}`) 
+        return p
+    } else  {
+        console.log(`Computer has chosen: ${s}`) 
+        return s
+    }
     
-
-
-
 }
 
-const fiveRounds = playRound()
-const humanChoice = getHumanChoice()
-const computerChoice = getComputerChoice()
-playGame(playRound(humanChoice, computerChoice))
 
+// Human choice to select r,p,s
+function getHumanChoice() {
+
+    const humanChoice = prompt("Choose your options: Rock, Paper, Scissors").toLowerCase();
+    if (humanChoice === 'rock') {
+        console.log(`You have chosen: ${humanChoice}`)
+        return humanChoice;
+    } else if (humanChoice === 'paper') {
+        console.log(`You have chosen: ${humanChoice}`)
+        return humanChoice;
+    } else if (humanChoice === 'scissors') {
+        console.log(`You have chosen: ${humanChoice}`) 
+        return humanChoice;
+    } else {
+        getHumanChoice()
+    }
+
+        
+}
 
 
 // Playing a single round
@@ -55,45 +79,16 @@ function playRound (humanChoice, computerChoice) {
 }
 
 
+// Playing entire game (5 rounds)
+function playGame() {
+    
 
-// Computer coice to output r,p,s randomly
-function getComputerChoice() {
-
-    cpuRand = Math.floor(Math.random() * 3)
-
-    if (cpuRand === 0) {
-        console.log(`Computer has chosen: ${r}`) 
-        return r
-    } else if (cpuRand === 1) {
-        console.log(`Computer has chosen: ${p}`) 
-        return p
-    } else  {
-        console.log(`Computer has chosen: ${s}`) 
-        return s
+    for (let fiveRounds = 0; fiveRounds < 6; fiveRounds++){
+    
+        
+        
     }
     
 }
-
-
-
-
-
-// Human choice to select r,p,s
-function getHumanChoice() {
-
-    const humanChoice = prompt("Choose your options: Rock, Paper, Scissors").toLowerCase();
-    if (humanChoice === 'rock') {
-        console.log(`You have chosen: ${humanChoice}`)
-        return humanChoice;
-    } else if (humanChoice === 'paper') {
-        console.log(`You have chosen: ${humanChoice}`)
-        return humanChoice;
-    } else if (humanChoice === 'scissors') {
-        console.log(`You have chosen: ${humanChoice}`) 
-        return humanChoice;
-    } else {
-        getHumanChoice()
-    }
-
-        
-}
+    
+playGame()
