@@ -47,38 +47,29 @@ function getHumanChoice() {
 
 
 // Playing a single round
-function playRound (humanChoice, computerChoice) {
-
-    let result;
+function playRound(humanChoice, computerChoice) {
 
     if (humanChoice === computerChoice) {
-        result = 'It\'s a tie';
-        console.log(result)
-    } else if (humanChoice === 'rock' && computerChoice === s){
-        result = 'You win. rock beats scissors'
-        console.log(result)
+        console.log('It\'s a tie');
+    } else if (humanChoice === 'rock' && computerChoice === s) {
+        console.log('You win. rock beats scissors');
         console.log(`Human = ${++humanScore}`);
-    } else if (humanChoice === 'paper' && computerChoice === r){
-        result = 'You win. paper beats rock'
-        console.log(result)
-        console.log(`Human = ${++humanScore}`)
-    } else if (humanChoice === 'scissors' && computerChoice === p){
-        result = 'You win. scissors beats paper'
-        console.log(result)
-        console.log(`Human = ${++humanScore}n`)
-    } else if (humanChoice === 'scissors' && computerChoice === r){
-        result = 'You lose. rock beats scissors'
-        console.log(result)
+    } else if (humanChoice === 'paper' && computerChoice === r) {
+        console.log('You win. paper beats rock');
+        console.log(`Human = ${++humanScore}`);
+    } else if (humanChoice === 'scissors' && computerChoice === p) {
+        console.log('You win. scissors beats paper');
+        console.log(`Human = ${++humanScore}`);
+    } else if (humanChoice === 'scissors' && computerChoice === r) {
+        console.log('You lose. rock beats scissors');
         console.log(`Computer = ${++computerScore}`);
-    } else if (humanChoice === 'rock' && computerChoice === p){
-        result = 'You lose. paper beats rock'
-        console.log(result)
+    } else if (humanChoice === 'rock' && computerChoice === p) {
+        console.log('You lose. paper beats rock');
         console.log(`Computer = ${++computerScore}`);
-    } else (humanChoice === 'paper' && computerChoice === s)
-        result ='You lose. scissors beats paper'
-        console.log(result)
+    } else if (humanChoice === 'paper' && computerChoice === s) {
+        console.log('You lose. scissors beats paper');
         console.log(`Computer = ${++computerScore}`);
-    
+    }
 }
 
 
