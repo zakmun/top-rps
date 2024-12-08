@@ -15,7 +15,7 @@ function playGame() {
 
 }
 
-const rounds = playRound()
+
 const humanChoice = getHumanChoice()
 const computerChoice = getComputerChoice()
 playGame(playRound(humanChoice, computerChoice))
@@ -28,28 +28,29 @@ function playRound (humanChoice, computerChoice) {
     let result;
 
     if (humanChoice === computerChoice) {
-        result = 'It is a tie';
+        result = 'It\'s a tie';
     } else if (humanChoice === 'rock' && computerChoice === s){
-        console.log('You win. rock beats scissors')
+        result = 'You win. rock beats scissors'
         console.log(`${++humanScore} point to human`);
     } else if (humanChoice === 'paper' && computerChoice === r){
-        console.log('You win. paper beats rock')
+        result = 'You win. paper beats rock'
         console.log(`${++humanScore} point to human`)
     } else if (humanChoice === 'scissors' && computerChoice === p){
-        console.log('You win. scissors beats paper')
+        result = 'You win. scissors beats paper'
         console.log(`${++humanScore} point to human`)
     } else if (humanChoice === 'scissors' && computerChoice === r){
-        console.log('You lose. rock beats scissors')
+        result = 'You lose. rock beats scissors'
         console.log(`${++computerScore} point to computer`);
     } else if (humanChoice === 'rock' && computerChoice === p){
-        console.log('You lose. paper beats rock')
+        result = 'You lose. paper beats rock'
         console.log(`${++computerScore} point to computer`);
     } else if (humanChoice === 'paper' && computerChoice === s){
-        console.log('You lose. scissors beats paper')
+        result ='You lose. scissors beats paper'
         console.log(`${++computerScore} point to computer`);
     } else {
         alert('Incorrect otions. please try again')
     }
+    console.log(result)
     
 }
 
