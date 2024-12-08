@@ -16,10 +16,8 @@ function playGame(roundNo) {
 //  +
 }
 
-const humanChoice = getHumanChoice()
-const computerChoice = getComputerChoice(3)
 
-playGame(playRound(humanChoice, computerChoice))
+playGame()
 
 
 
@@ -47,11 +45,15 @@ function playRound (humanChoice, computerChoice) {
     } else if (humanChoice === 'paper' && computerChoice === 2){
         console.log('You lose. scissors beats paper')
         console.log(`${++computerScore} point to computer`);
-    }     
+    } else {
+        alert('Incorrect otions. please try again')
+    }
     
 }
 
-
+const humanChoice = getHumanChoice()
+const computerChoice = getComputerChoice(3)
+playRound(humanChoice, computerChoice)
 
 
 // Computer coice to output r,p,s randomly
@@ -61,13 +63,15 @@ function getComputerChoice(maxNum) {
 
     if (cpuRand === 0) {
         console.log(`Computer has chosen: ${r}`) 
+        return r
     } else if (cpuRand === 1) {
         console.log(`Computer has chosen: ${p}`) 
+        return p
     } else  {
         console.log(`Computer has chosen: ${s}`) 
+        return s
     }
     
-    return cpuRand;
 }
 
 
