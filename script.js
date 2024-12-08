@@ -82,7 +82,7 @@ function playRound (humanChoice, computerChoice) {
 // Playing entire game (5 rounds)
 function playGame() {
     
-    for (let fiveRounds = 0; fiveRounds = 5; fiveRounds++){
+    for (let fiveRounds = 0; fiveRounds < 5; fiveRounds++){
     
         const humanChoice = getHumanChoice()
         const computerChoice = getComputerChoice()
@@ -91,14 +91,15 @@ function playGame() {
         
     }
 
-    if (humanScore > computerScore) {
+    if (humanScore == computerScore) {
         console.log(`${humanScore} human & ${computerScore} computer`)
-        console.log('Human wins!')
+        console.log('No winner! It\'s a draw')
     } else if (humanScore < computerScore) {
         console.log(`${humanScore} human & ${computerScore} computer`)
         console.log('Computer wins!')
     } else {
-        console.log('It\'s a draw!')
+        console.log(`${humanScore} human & ${computerScore} computer`)
+        console.log('Human wins!')
     }
     
     
