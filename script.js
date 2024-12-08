@@ -15,7 +15,7 @@ function playGame() {
 
 }
 
-
+const rounds = playRound()
 const humanChoice = getHumanChoice()
 const computerChoice = getComputerChoice()
 playGame(playRound(humanChoice, computerChoice))
@@ -25,6 +25,7 @@ playGame(playRound(humanChoice, computerChoice))
 // Playing a single round
 function playRound (humanChoice, computerChoice) {
 
+    let scoreResult;
 
     if (humanChoice === computerChoice) {
         console.log('It is a tie');
