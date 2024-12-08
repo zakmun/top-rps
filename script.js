@@ -8,12 +8,11 @@ let computerScore = 0;
 
 
 // Playing entire game (5 rounds)
-function playGame(roundNo) {
+function playGame() {
+    
 
-//     for (let newRound; newRound < roundNo; newRound){
-//         console.log('this works')
-//     }
-//  +
+
+
 }
 
 
@@ -80,20 +79,19 @@ function getComputerChoice() {
 // Human choice to select r,p,s
 function getHumanChoice() {
 
-    const humanSelects = prompt("Choose your options: Rock, Paper, Scissors").toLowerCase();
-    if (humanSelects === 'rock') {
-        console.log(`You have chosen: ${humanSelects}`)
-        return humanSelects;
-    } else if (humanSelects === 'paper') {
-        console.log(`You have chosen: ${humanSelects}`)
-        return humanSelects;
-    } else if (humanSelects === 'scissors') {
-        console.log(`You have chosen: ${humanSelects}`) 
-        return humanSelects;
+    const humanChoice = prompt("Choose your options: Rock, Paper, Scissors").toLowerCase();
+    if (humanChoice === 'rock') {
+        console.log(`You have chosen: ${humanChoice}`)
+        return humanChoice;
+    } else if (humanChoice === 'paper') {
+        console.log(`You have chosen: ${humanChoice}`)
+        return humanChoice;
+    } else if (humanChoice === 'scissors') {
+        console.log(`You have chosen: ${humanChoice}`) 
+        return humanChoice;
     } else {
         getHumanChoice()
     }
 
-    return humanSelects;
-    
+        
 }
