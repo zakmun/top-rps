@@ -5,15 +5,31 @@ const s = "scissors";
 let humanScore = 0;
 let computerScore = 0;
 
+
+
 // Playing entire game (5 rounds)
-function playGame() {
-    
+function playGame(roundNo) {
+
+//     for (let newRound; newRound < roundNo; newRound){
+//         console.log('this works')
+//     }
+//  +
 }
+
+const humanChoice = getHumanChoice()
+const computerChoice = getComputerChoice(3)
+
+playGame(playRound(humanChoice, computerChoice))
+
+
 
 // Playing a single round
 function playRound (humanChoice, computerChoice) {
 
-    if (humanChoice === 'rock' && computerChoice === 2){
+
+    if (humanChoice === computerChoice) {
+        return 'It\'s a tie';
+    } else if (humanChoice === 'rock' && computerChoice === 2){
         console.log(`${++humanScore} point to human`);
         console.log('You win. rock beats scissors')
     } else if (humanChoice === 'paper' && computerChoice === 0){
@@ -31,16 +47,12 @@ function playRound (humanChoice, computerChoice) {
     } else if (humanChoice === 'paper' && computerChoice === 2){
         console.log(`${++computerScore} point to computer`)
         console.log('You lose. scissors beats paper')
-    } else {
-        console.log('It\'s a tie');
-     }
-         
+    }     
+    
 }
 
-const humanChoice = getHumanChoice()
-const computerChoice = getComputerChoice(3)
 
-playRound(humanChoice, computerChoice)
+
 
 // Computer coice to output r,p,s randomly
 function getComputerChoice(maxNum) {
@@ -68,10 +80,13 @@ function getHumanChoice() {
     const humanSelects = prompt("Choose your options: Rock, Paper, Scissors").toLowerCase();
     if (humanSelects === 'rock') {
         console.log(`You have chosen: ${humanSelects}`)
+        return humanSelects;
     } else if (humanSelects === 'paper') {
         console.log(`You have chosen: ${humanSelects}`)
+        return humanSelects;
     } else if (humanSelects === 'scissors') {
         console.log(`You have chosen: ${humanSelects}`) 
+        return humanSelects;
     } else {
         getHumanChoice()
     }
