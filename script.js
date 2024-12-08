@@ -85,7 +85,10 @@ function playGame() {
 
     for (let fiveRounds = 0; fiveRounds < 6; fiveRounds++){
     
+        const humanChoice = getHumanChoice()
+        const computerChoice = getComputerChoice()
         
+        playRound(humanChoice, computerChoice)
         
     }
     
