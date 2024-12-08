@@ -74,12 +74,10 @@ function playRound (humanChoice, computerChoice) {
         result = 'You lose. paper beats rock'
         console.log(result)
         console.log(`Computer = ${++computerScore}`);
-    } else if (humanChoice === 'paper' && computerChoice === s){
+    } else (humanChoice === 'paper' && computerChoice === s){
         result ='You lose. scissors beats paper'
         console.log(result)
         console.log(`Computer = ${++computerScore}`);
-    } else {
-        alert('Incorrect otions. please try again')
     }
     
 }
