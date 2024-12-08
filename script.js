@@ -25,10 +25,10 @@ playGame(playRound(humanChoice, computerChoice))
 // Playing a single round
 function playRound (humanChoice, computerChoice) {
 
-    let scoreResult;
+    let result;
 
     if (humanChoice === computerChoice) {
-        console.log('It is a tie');
+        result = 'It is a tie';
     } else if (humanChoice === 'rock' && computerChoice === s){
         console.log('You win. rock beats scissors')
         console.log(`${++humanScore} point to human`);
