@@ -53,28 +53,34 @@ function playRound (humanChoice, computerChoice) {
 
     if (humanChoice === computerChoice) {
         result = 'It\'s a tie';
+        console.log(result)
     } else if (humanChoice === 'rock' && computerChoice === s){
         result = 'You win. rock beats scissors'
-        console.log(`${++humanScore} point to human`);
+        console.log(result)
+        console.log(`Human = ${++humanScore}`);
     } else if (humanChoice === 'paper' && computerChoice === r){
         result = 'You win. paper beats rock'
-        console.log(`${++humanScore} point to human`)
+        console.log(result)
+        console.log(`Human = ${++humanScore}`)
     } else if (humanChoice === 'scissors' && computerChoice === p){
         result = 'You win. scissors beats paper'
-        console.log(`${++humanScore} point to human`)
+        console.log(result)
+        console.log(`Human = ${++humanScore}n`)
     } else if (humanChoice === 'scissors' && computerChoice === r){
         result = 'You lose. rock beats scissors'
-        console.log(`${++computerScore} point to computer`);
+        console.log(result)
+        console.log(`Computer = ${++computerScore}`);
     } else if (humanChoice === 'rock' && computerChoice === p){
         result = 'You lose. paper beats rock'
-        console.log(`${++computerScore} point to computer`);
+        console.log(result)
+        console.log(`Computer = ${++computerScore}`);
     } else if (humanChoice === 'paper' && computerChoice === s){
         result ='You lose. scissors beats paper'
-        console.log(`${++computerScore} point to computer`);
+        console.log(result)
+        console.log(`Computer = ${++computerScore}`);
     } else {
         alert('Incorrect otions. please try again')
     }
-    console.log(result)
     
 }
 
@@ -92,13 +98,13 @@ function playGame() {
     }
 
     if (humanScore == computerScore) {
-        console.log(`${humanScore} human & ${computerScore} computer`)
+        console.log(`human = ${humanScore} vs computer = ${computerScore}`)
         console.log('No winner! It\'s a draw')
     } else if (humanScore < computerScore) {
-        console.log(`${humanScore} human & ${computerScore} computer`)
+        console.log(`human = ${humanScore} vs computer = ${computerScore}`)
         console.log('Computer wins!')
     } else {
-        console.log(`${humanScore} human & ${computerScore} computer`)
+        console.log(`human = ${humanScore} vs computer = ${computerScore}`)
         console.log('Human wins!')
     }
     
