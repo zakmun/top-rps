@@ -52,14 +52,14 @@ function playRound (humanChoice, computerChoice) {
 }
 
 const humanChoice = getHumanChoice()
-const computerChoice = getComputerChoice(3)
+const computerChoice = getComputerChoice()
 playRound(humanChoice, computerChoice)
 
 
 // Computer coice to output r,p,s randomly
-function getComputerChoice(maxNum) {
+function getComputerChoice() {
 
-    cpuRand = Math.floor(Math.random() * maxNum)
+    cpuRand = Math.floor(Math.random() * 3)
 
     if (cpuRand === 0) {
         console.log(`Computer has chosen: ${r}`) 
