@@ -5,6 +5,9 @@ const s = "scissors";
 let humanScore = 0;
 let computerScore = 0;
 
+const humanRock = document.getElementsByClassName('human-rock')
+const humanPaper = document.getElementsByClassName('human-paper')
+const humanScissors = document.getElementsByClassName('human-scissors')
 
 // Computer coice to output r,p,s randomly
 function getComputerChoice() {
@@ -27,11 +30,6 @@ function getComputerChoice() {
 
 // Human choice to select r,p,s
 function getHumanChoice() {
-
-    const humanRock = document.getElementsByClassName('human-rock')
-    const humanPaper = document.getElementsByClassName('human-paper')
-    const humanScissors = document.getElementsByClassName('human-scissors')
-    
 
     const humanChoice = prompt("Choose your options: Rock, Paper, Scissors").toLowerCase();
     if (humanChoice === 'rock') {
