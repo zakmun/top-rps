@@ -28,7 +28,9 @@ function getComputerChoice() {
 // Human choice to select r,p,s
 function getHumanChoice() {
 
-    const btn = document.querySelector('button')
+    const humanRock = document.getElementsByClassName('human-rock')
+    const humanPaper = document.getElementsByClassName('human-paper')
+    const humanScissors = document.getElementsByClassName('human-scissors')
     
 
     const humanChoice = prompt("Choose your options: Rock, Paper, Scissors").toLowerCase();
