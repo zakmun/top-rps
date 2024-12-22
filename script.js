@@ -5,9 +5,19 @@ const s = "scissors";
 let humanScore = 0;
 let computerScore = 0;
 
-const humanRock = document.getElementsByClassName('human-rock')
-const humanPaper = document.getElementsByClassName('human-paper')
-const humanScissors = document.getElementsByClassName('human-scissors')
+const humanRock = document.getElementById('human-rock')
+const humanPaper = document.getElementById('human-paper')
+const humanScissors = document.getElementById('human-scissors')
+
+humanRock.addEventListener('click', function(e) {
+    console.log(e.target)
+})
+humanPaper.addEventListener('click', function(e) {
+    console.log(e.target)
+})
+humanScissors.addEventListener('click', function(e) {
+    console.log(e.target)
+})
 
 // Computer coice to output r,p,s randomly
 function getComputerChoice() {
