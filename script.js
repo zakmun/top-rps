@@ -11,6 +11,7 @@ const humanScissors = document.getElementById('human-scissors')
 
 humanRock.addEventListener('click', function(e) {
     console.log(e.target)
+    
 })
 humanPaper.addEventListener('click', function(e) {
     console.log(e.target)
@@ -86,30 +87,30 @@ function playRound(humanChoice, computerChoice) {
 }
 
 
-// Playing entire game (5 rounds)
-// function playGame() {
-    
-//     for (let fiveRounds = 0; fiveRounds < 5; fiveRounds++){
-    
-//         const humanChoice = getHumanChoice()
-//         const computerChoice = getComputerChoice()
-        
-//         playRound(humanChoice, computerChoice)
-        
-//     }
 
-//     if (humanScore == computerScore) {
-//         console.log(`human = ${humanScore} vs computer = ${computerScore}`)
-//         console.log('No winner! It\'s a draw')
-//     } else if (humanScore < computerScore) {
-//         console.log(`human = ${humanScore} vs computer = ${computerScore}`)
-//         console.log('Computer wins!')
-//     } else {
-//         console.log(`human = ${humanScore} vs computer = ${computerScore}`)
-//         console.log('Human wins!')
-//     }
+// Playing entire game (5 rounds)
+function playGame() {
+    
+       
+        const humanChoice = getHumanChoice()
+        const computerChoice = getComputerChoice()
+        
+        playRound(humanChoice, computerChoice)
+        
+    }
+
+    if (humanScore == computerScore) {
+        console.log(`human = ${humanScore} vs computer = ${computerScore}`)
+        console.log('No winner! It\'s a draw')
+    } else if (humanScore < computerScore) {
+        console.log(`human = ${humanScore} vs computer = ${computerScore}`)
+        console.log('Computer wins!')
+    } else {
+        console.log(`human = ${humanScore} vs computer = ${computerScore}`)
+        console.log('Human wins!')
     
     
-// }
     
-// playGame()
+}
+    
+playGame()
