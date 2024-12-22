@@ -28,6 +28,9 @@ function getComputerChoice() {
 // Human choice to select r,p,s
 function getHumanChoice() {
 
+    const btn = document.querySelector('button')
+    
+
     const humanChoice = prompt("Choose your options: Rock, Paper, Scissors").toLowerCase();
     if (humanChoice === 'rock') {
         console.log(`You have chosen: ${humanChoice}`)
@@ -74,29 +77,29 @@ function playRound(humanChoice, computerChoice) {
 
 
 // Playing entire game (5 rounds)
-function playGame() {
+// function playGame() {
     
-    for (let fiveRounds = 0; fiveRounds < 5; fiveRounds++){
+//     for (let fiveRounds = 0; fiveRounds < 5; fiveRounds++){
     
-        const humanChoice = getHumanChoice()
-        const computerChoice = getComputerChoice()
+//         const humanChoice = getHumanChoice()
+//         const computerChoice = getComputerChoice()
         
-        playRound(humanChoice, computerChoice)
+//         playRound(humanChoice, computerChoice)
         
-    }
+//     }
 
-    if (humanScore == computerScore) {
-        console.log(`human = ${humanScore} vs computer = ${computerScore}`)
-        console.log('No winner! It\'s a draw')
-    } else if (humanScore < computerScore) {
-        console.log(`human = ${humanScore} vs computer = ${computerScore}`)
-        console.log('Computer wins!')
-    } else {
-        console.log(`human = ${humanScore} vs computer = ${computerScore}`)
-        console.log('Human wins!')
-    }
+//     if (humanScore == computerScore) {
+//         console.log(`human = ${humanScore} vs computer = ${computerScore}`)
+//         console.log('No winner! It\'s a draw')
+//     } else if (humanScore < computerScore) {
+//         console.log(`human = ${humanScore} vs computer = ${computerScore}`)
+//         console.log('Computer wins!')
+//     } else {
+//         console.log(`human = ${humanScore} vs computer = ${computerScore}`)
+//         console.log('Human wins!')
+//     }
     
     
-}
+// }
     
-playGame()
+// playGame()
