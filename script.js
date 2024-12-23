@@ -19,13 +19,13 @@ function getComputerChoice() {
 
     if (cpuRand === 0) {
         console.log(`Computer has chosen: ${r}`) 
-        
+        return r
     } else if (cpuRand === 1) {
         console.log(`Computer has chosen: ${p}`) 
-       
+       return p
     } else  {
         console.log(`Computer has chosen: ${s}`) 
-        
+        return s
     }
     
 }
@@ -35,8 +35,7 @@ function getComputerChoice() {
 function getHumanChoice() {
 
     if (humanChoice === 'rock') {
-
-
+   
 
         console.log(`You have chosen: ${humanChoice}`)
         
@@ -88,9 +87,13 @@ function playRound(humanChoice, computerChoice) {
 
     humanRock.addEventListener('click', function() {
         
+        
         const humanChoice = 'rock'
         const computerChoice = getComputerChoice()
         console.log(playRound(humanChoice, computerChoice))
+
+    
+
         
     })
     
