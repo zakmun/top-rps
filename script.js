@@ -42,7 +42,6 @@ function getComputerChoice() {
 // Human choice to select r,p,s
 function getHumanChoice() {
 
-    const humanChoice = prompt("Choose your options: Rock, Paper, Scissors").toLowerCase();
     if (humanChoice === 'rock') {
         console.log(`You have chosen: ${humanChoice}`)
         return humanChoice;
@@ -86,31 +85,35 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-
-
-// Playing entire game (5 rounds)
-function playGame() {
-    
-       
         const humanChoice = getHumanChoice()
         const computerChoice = getComputerChoice()
         
         playRound(humanChoice, computerChoice)
-        
-    }
 
-    if (humanScore == computerScore) {
-        console.log(`human = ${humanScore} vs computer = ${computerScore}`)
-        console.log('No winner! It\'s a draw')
-    } else if (humanScore < computerScore) {
-        console.log(`human = ${humanScore} vs computer = ${computerScore}`)
-        console.log('Computer wins!')
-    } else {
-        console.log(`human = ${humanScore} vs computer = ${computerScore}`)
-        console.log('Human wins!')
+
+// Playing entire game (5 rounds)
+// function playGame() {
+    
+       
+//         const humanChoice = getHumanChoice()
+//         const computerChoice = getComputerChoice()
+        
+//         playRound(humanChoice, computerChoice)
+        
+//     }
+
+//     if (humanScore == computerScore) {
+//         console.log(`human = ${humanScore} vs computer = ${computerScore}`)
+//         console.log('No winner! It\'s a draw')
+//     } else if (humanScore < computerScore) {
+//         console.log(`human = ${humanScore} vs computer = ${computerScore}`)
+//         console.log('Computer wins!')
+//     } else {
+//         console.log(`human = ${humanScore} vs computer = ${computerScore}`)
+//         console.log('Human wins!')
     
     
     
-}
+// }
     
-playGame()
+// playGame()
