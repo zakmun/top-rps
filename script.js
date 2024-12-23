@@ -10,6 +10,7 @@ const humanPaper = document.getElementById('human-paper')
 const humanScissors = document.getElementById('human-scissors')
 
 const container = document.querySelector('.container')
+const choiceContainer = document.querySelector('.choice-container')
 
 
 // Computer coice to output r,p,s randomly
