@@ -9,7 +9,7 @@ const humanRock = document.getElementById('human-rock')
 const humanPaper = document.getElementById('human-paper')
 const humanScissors = document.getElementById('human-scissors')
 
-const container = document.querySelector('.div')
+const container = document.querySelector('.container')
 
 
 // Computer coice to output r,p,s randomly
@@ -35,6 +35,9 @@ function getComputerChoice() {
 function getHumanChoice() {
 
     if (humanChoice === 'rock') {
+
+
+
         console.log(`You have chosen: ${humanChoice}`)
         
     } else if (humanChoice === 'paper') {
