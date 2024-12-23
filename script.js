@@ -84,21 +84,25 @@ function playRound(humanChoice, computerChoice) {
     // playRound(humanChoice, computerChoice)
 
 
-    humanRock.addEventListener('click', function(e) {
+    humanRock.addEventListener('click', function() {
         
-        const humanChoice = getHumanChoice()
-    const computerChoice = getComputerChoice()
-    
+        const humanChoice = 'rock'
+        const computerChoice = getComputerChoice()
         console.log(playRound(humanChoice, computerChoice))
         
     })
     
     
-    humanPaper.addEventListener('click', function(e) {
-        console.log(e.target)
+    humanPaper.addEventListener('click', function() {
+        const humanChoice = 'paper'
+        const computerChoice = getComputerChoice()
+        console.log(playRound(humanChoice, computerChoice))
     })
-    humanScissors.addEventListener('click', function(e) {
-        console.log(e.target)
+    humanScissors.addEventListener('click', function() {
+
+        const humanChoice = 'scissors'
+        const computerChoice = getComputerChoice()
+        console.log(playRound(humanChoice, computerChoice))
     })
 
 
