@@ -87,27 +87,33 @@ function playRound(humanChoice, computerChoice) {
 
     humanRock.addEventListener('click', function() {
         
-        
         const humanChoice = 'rock'
         const computerChoice = getComputerChoice()
-        console.log(playRound(humanChoice, computerChoice))
 
-    
-
-        
+        const h3 = document.createElement('h3');
+        h3.textContent = `You have chosen: ${humanChoice} and CPU has chosen: ${computerChoice}`;
+        container.appendChild(h3)
+           
     })
     
     
     humanPaper.addEventListener('click', function() {
+        
         const humanChoice = 'paper'
         const computerChoice = getComputerChoice()
-        console.log(playRound(humanChoice, computerChoice))
+
+        const h3 = document.createElement('h3');
+        h3.textContent = `You have chosen: ${humanChoice} and CPU has chosen: ${computerChoice}`;
+        container.appendChild(h3)
     })
     humanScissors.addEventListener('click', function() {
 
         const humanChoice = 'scissors'
         const computerChoice = getComputerChoice()
-        console.log(playRound(humanChoice, computerChoice))
+        
+        const h3 = document.createElement('h3');
+        h3.textContent = `You have chosen: ${humanChoice} and CPU has chosen: ${computerChoice}`;
+        container.appendChild(h3)
     })
 
 
