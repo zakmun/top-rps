@@ -28,20 +28,6 @@ function getComputerChoice() {
 }
 
 
-// Human choice to select r,p,s
-function getHumanChoice() {
-
-    if (humanChoice === 'rock') {
-    } else if (humanChoice === 'paper') {
-    } else if (humanChoice === 'scissors') {        
-    } else {
-        getHumanChoice()
-    }
-
-        
-}
-
-
 // Playing a single round
 function playRound(humanChoice, computerChoice) {
 
