@@ -9,6 +9,8 @@ const humanRock = document.getElementById('human-rock')
 const humanPaper = document.getElementById('human-paper')
 const humanScissors = document.getElementById('human-scissors')
 
+const container = document.querySelector('.div')
+
 
 // Computer coice to output r,p,s randomly
 function getComputerChoice() {
