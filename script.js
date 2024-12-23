@@ -32,6 +32,17 @@ function getComputerChoice() {
 function playRound(humanChoice, computerChoice) {
 
     if (humanChoice === computerChoice) {
+        
+        // const roundContainer = document.createElement('div');
+// roundContainer.classList.add('roundContainer');
+// const h4 = document.createElement('h4'); // Fix here: 'h4' should be a string
+// h4.textContent = 'It\'s a tie';
+// choiceContainer.appendChild(roundContainer);
+// roundContainer.appendChild(h4);
+
+
+
+
         console.log('It\'s a tie');
     } else if (humanChoice === 'rock' && computerChoice === s) {
         console.log('You win. rock beats scissors');
@@ -64,13 +75,13 @@ function playRound(humanChoice, computerChoice) {
         
         const humanChoice = 'rock'
         const computerChoice = getComputerChoice()
+        playRound(humanChoice, computerChoice)
 
-        const choiceContainer = document.createElement('div')
-        choiceContainer.classList.add('choiceContainer')
-        const h3 = document.createElement('h3');
-        h3.textContent = `You have chosen: ${humanChoice} and CPU has chosen: ${computerChoice}`;
-        container.appendChild(choiceContainer)
-        choiceContainer.appendChild(h3)
+        // choiceContainer.classList.add('choiceContainer')
+        // const h3 = document.createElement('h3');
+        // h3.textContent = `You have chosen: ${humanChoice} and CPU has chosen: ${computerChoice}`;
+        // container.appendChild(choiceContainer)
+        // choiceContainer.appendChild(h3)
 
            
     })
@@ -80,25 +91,29 @@ function playRound(humanChoice, computerChoice) {
         
         const humanChoice = 'paper'
         const computerChoice = getComputerChoice()
+        playRound(humanChoice, computerChoice)
 
-        const choiceContainer = document.createElement('div')
-        choiceContainer.classList.add('choiceContainer')
-        const h3 = document.createElement('h3');
-        h3.textContent = `You have chosen: ${humanChoice} and CPU has chosen: ${computerChoice}`;
-        container.appendChild(choiceContainer)
-        choiceContainer.appendChild(h3)
+
+        // const choiceContainer = document.createElement('div')
+        // choiceContainer.classList.add('choiceContainer')
+        // const h3 = document.createElement('h3');
+        // h3.textContent = `You have chosen: ${humanChoice} and CPU has chosen: ${computerChoice}`;
+        // container.appendChild(choiceContainer)
+        // choiceContainer.appendChild(h3)
     })
     humanScissors.addEventListener('click', function() {
 
         const humanChoice = 'scissors'
         const computerChoice = getComputerChoice()
+        playRound(humanChoice, computerChoice)
+
         
-        const choiceContainer = document.createElement('div')
-        choiceContainer.classList.add('choiceContainer')
-        const h3 = document.createElement('h3');
-        h3.textContent = `You have chosen: ${humanChoice} and CPU has chosen: ${computerChoice}`;
-        container.appendChild(choiceContainer)
-        choiceContainer.appendChild(h3)
+        // const choiceContainer = document.createElement('div')
+        // choiceContainer.classList.add('choiceContainer')
+        // const h3 = document.createElement('h3');
+        // h3.textContent = `You have chosen: ${humanChoice} and CPU has chosen: ${computerChoice}`;
+        // container.appendChild(choiceContainer)
+        // choiceContainer.appendChild(h3)
     })
 
 
