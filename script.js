@@ -9,16 +9,6 @@ const humanRock = document.getElementById('human-rock')
 const humanPaper = document.getElementById('human-paper')
 const humanScissors = document.getElementById('human-scissors')
 
-humanRock.addEventListener('click', function(e) {
-    console.log(e.target)
-    
-})
-humanPaper.addEventListener('click', function(e) {
-    console.log(e.target)
-})
-humanScissors.addEventListener('click', function(e) {
-    console.log(e.target)
-})
 
 // Computer coice to output r,p,s randomly
 function getComputerChoice() {
@@ -62,6 +52,9 @@ function getHumanChoice() {
 // Playing a single round
 function playRound(humanChoice, computerChoice) {
 
+
+
+
     if (humanChoice === computerChoice) {
         console.log('It\'s a tie');
     } else if (humanChoice === 'rock' && computerChoice === s) {
@@ -85,10 +78,28 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-        const humanChoice = getHumanChoice()
-        const computerChoice = getComputerChoice()
         
-        playRound(humanChoice, computerChoice)
+    
+        
+    // playRound(humanChoice, computerChoice)
+
+
+    humanRock.addEventListener('click', function(e) {
+        
+        const humanChoice = getHumanChoice()
+    const computerChoice = getComputerChoice()
+    
+        console.log(playRound(humanChoice, computerChoice))
+        
+    })
+    
+    
+    humanPaper.addEventListener('click', function(e) {
+        console.log(e.target)
+    })
+    humanScissors.addEventListener('click', function(e) {
+        console.log(e.target)
+    })
 
 
 // Playing entire game (5 rounds)
