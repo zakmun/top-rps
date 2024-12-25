@@ -11,6 +11,7 @@ const humanScissors = document.getElementById('human-scissors')
 
 const container = document.querySelector('.container')
 const choiceContainer = document.querySelector('.choice-container')
+ 
 
 
 // Computer coice to output r,p,s randomly
@@ -32,30 +33,22 @@ function getComputerChoice() {
 // Playing a single round
 function playRound(humanChoice, computerChoice) {
     const h4 = document.createElement('h4');
-    choiceContainer.appendChild(h4)
-    const scoreH4 = document.createElement('h4')
-
+    choiceContainer.appendChild(h4);
 
     if (humanChoice === computerChoice) {
         h4.textContent = `You selected ${humanChoice}. Computer selected ${computerChoice} - It\'s a tie`;
     } else if (humanChoice === 'rock' && computerChoice === s) {
-        h4.textContent = `${humanChoice} beats ${computerChoice}. You win!`
-        scoreH4.textContent = `Human = ${++humanScore}`
+        h4.textContent = `${humanChoice} beats ${computerChoice}. You win! Human = ${++humanScore} - Computer = ${computerScore}`
     } else if (humanChoice === 'paper' && computerChoice === r) {
-        console.log('You win. paper beats rock');
-        console.log(`Human = ${++humanScore}`);
+        h4.textContent = `${humanChoice} beats ${computerChoice}. You win! Human = ${++humanScore} - Computer = ${computerScore}`
     } else if (humanChoice === 'scissors' && computerChoice === p) {
-        console.log('You win. scissors beats paper');
-        console.log(`Human = ${++humanScore}`);
+        h4.textContent = `${humanChoice} beats ${computerChoice}. You win! Human = ${++humanScore} - Computer = ${computerScore}`
     } else if (humanChoice === 'scissors' && computerChoice === r) {
-        console.log('You lose. rock beats scissors');
-        console.log(`Computer = ${++computerScore}`);
+        h4.textContent = `${computerChoice} beats ${humanChoice}. You lose! Human = ${humanScore} - Computer = ${++computerScore}`
     } else if (humanChoice === 'rock' && computerChoice === p) {
-        console.log('You lose. paper beats rock');
-        console.log(`Computer = ${++computerScore}`);
+        h4.textContent = `${computerChoice} beats ${humanChoice}. You lose! Human = ${humanScore} - Computer = ${++computerScore}`
     } else if (humanChoice === 'paper' && computerChoice === s) {
-        console.log('You lose. scissors beats paper');
-        console.log(`Computer = ${++computerScore}`);
+        h4.textContent = `${computerChoice} beats ${humanChoice}. You lose! Human = ${humanScore} - Computer = ${++computerScore}`
     }
 }
 
