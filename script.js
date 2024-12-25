@@ -32,15 +32,15 @@ function getComputerChoice() {
 // Playing a single round
 function playRound(humanChoice, computerChoice) {
     const h4 = document.createElement('h4');
+    choiceContainer.appendChild(h4)
+    const scoreH4 = document.createElement('h4')
+
 
     if (humanChoice === computerChoice) {
         h4.textContent = `You selected ${humanChoice}. Computer selected ${computerChoice} - It\'s a tie`;
-        choiceContainer.appendChild(h4)
-
     } else if (humanChoice === 'rock' && computerChoice === s) {
-        h4.
-        console.log('You win. rock beats scissors');
-        console.log(`Human = ${++humanScore}`);
+        h4.textContent = `${humanChoice} beats ${computerChoice}. You win!`
+        scoreH4.textContent = `Human = ${++humanScore}`
     } else if (humanChoice === 'paper' && computerChoice === r) {
         console.log('You win. paper beats rock');
         console.log(`Human = ${++humanScore}`);
