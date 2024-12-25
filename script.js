@@ -91,6 +91,7 @@ function isGameOver () {
        choiceContainer.appendChild(winnerMsg);
        gameOverState = true;
        disableButtons()
+       restartGame()
 
     } else if (computerScore === 5) {
        const winnerMsg = document.createElement('h2')
@@ -99,7 +100,10 @@ function isGameOver () {
        choiceContainer.appendChild(winnerMsg)
        gameOverState = true;
        disableButtons()
+       restartGame()
     }
+
+
 }
 
 function disableButtons () {
@@ -108,29 +112,13 @@ function disableButtons () {
   humanScissors.disabled = true;
 }
 
-// Playing entire game (5 rounds)
-// function playGame() {
-    
-       
-//         const humanChoice = getHumanChoice()
-//         const computerChoice = getComputerChoice()
-        
-//         playRound(humanChoice, computerChoice)
-        
-//     }
 
-//     if (humanScore == computerScore) {
-//         console.log(`human = ${humanScore} vs computer = ${computerScore}`)
-//         console.log('No winner! It\'s a draw')
-//     } else if (humanScore < computerScore) {
-//         console.log(`human = ${humanScore} vs computer = ${computerScore}`)
-//         console.log('Computer wins!')
-//     } else {
-//         console.log(`human = ${humanScore} vs computer = ${computerScore}`)
-//         console.log('Human wins!')
-    
-    
-    
-// }
-    
-// playGame()
+function restartGame () {
+
+    if (gameOverState === true) {
+        const restart = document.createElement('BUTTON');
+        restart.textContent = 'Restart'
+        choiceContainer.appendChild(restart);
+    } 
+
+}
