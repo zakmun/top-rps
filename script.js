@@ -5,7 +5,7 @@ const s = "scissors";
 let humanScore = 0;
 let computerScore = 0;
 
-
+let gameOverState = false;
 
 const humanRock = document.getElementById('human-rock')
 const humanPaper = document.getElementById('human-paper')
