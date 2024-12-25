@@ -34,17 +34,10 @@ function playRound(humanChoice, computerChoice) {
 
     if (humanChoice === computerChoice) {
         
-        // const roundContainer = document.createElement('div');
-// roundContainer.classList.add('roundContainer');
-// const h4 = document.createElement('h4'); // Fix here: 'h4' should be a string
-// h4.textContent = 'It\'s a tie';
-// choiceContainer.appendChild(roundContainer);
-// roundContainer.appendChild(h4);
+        const h4 = document.createElement('h4');
+        h4.textContent = `You selected ${humanChoice}. Computer selected ${computerChoice} - It\'s a tie`;
+        choiceContainer.appendChild(h4)
 
-
-
-
-        console.log('It\'s a tie');
     } else if (humanChoice === 'rock' && computerChoice === s) {
         console.log('You win. rock beats scissors');
         console.log(`Human = ${++humanScore}`);
