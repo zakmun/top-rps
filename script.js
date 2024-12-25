@@ -88,10 +88,12 @@ function isGameOver () {
        const winnerMsg = document.createElement('h2')
        winnerMsg.textContent = 'Congratutalations. You Won!';
        choiceContainer.appendChild(winnerMsg);
+       gameOverState = true;
     } else if (computerScore === 5) {
        const winnerMsg = document.createElement('h2')
        winnerMsg.textContent = 'Unlucky. Computer won!';
        choiceContainer.appendChild(winnerMsg)
+       gameOverState = true;
     }
 }
 
