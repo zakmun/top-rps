@@ -7,9 +7,9 @@ let computerScore = 0;
 
 let gameOverState = false;
 
-const humanRock = document.getElementById('human-rock')
-const humanPaper = document.getElementById('human-paper')
-const humanScissors = document.getElementById('human-scissors')
+const rock = document.getElementById('human-rock')
+const paper = document.getElementById('human-paper')
+const scissors = document.getElementById('human-scissors')
 
 const container = document.querySelector('.container')
 const choiceContainer = document.querySelector('.choice-container')
@@ -33,32 +33,28 @@ function getComputerChoice() {
     
 }
 
-humanRock.addEventListener('click', function() {
-        
+// RPS buttons
+rock.addEventListener('click', function() {
     const humanChoice = 'rock'
     const computerChoice = getComputerChoice()
-    playRound(humanChoice, computerChoice)
-
-       
+    playRound(humanChoice, computerChoice) 
 })
 
-
-humanPaper.addEventListener('click', function() {
-    
+paper.addEventListener('click', function() { 
     const humanChoice = 'paper'
     const computerChoice = getComputerChoice()
     playRound(humanChoice, computerChoice)
-
 })
-humanScissors.addEventListener('click', function() {
 
+scissors.addEventListener('click', function() {
     const humanChoice = 'scissors'
     const computerChoice = getComputerChoice()
     playRound(humanChoice, computerChoice)
-
 })
 
 
+
+// Display winner and loser of each round and run isGameOver func to end the game once someone has 5 points
 function playRound(humanChoice, computerChoice) {
     const h4 = document.createElement('h4');
     choiceContainer.appendChild(h4);
@@ -83,6 +79,7 @@ function playRound(humanChoice, computerChoice) {
 }
 
 
+// Game is over once someone reaches 5 points. The disableButtons and restartGame funcs will then run.
 function isGameOver () {
     if (humanScore === 5) {
        const winnerMsg = document.createElement('h2')
@@ -106,16 +103,19 @@ function isGameOver () {
 
 }
 
+
+// Disable the buttons once the game is over.
 function disableButtons () {
-  humanRock.disabled = true;
-  humanPaper.disabled = true;
-  humanScissors.disabled = true;
+  rock.disabled = true;
+  paper.disabled = true;
+  scissors.disabled = true;
 }
 
 
+// Create a restart button and display it once game is over. Reload the page once its clicked.
 function restartGame () {
 
-    const restart = document.createElement('BUTTON');
+    const restart = document.createElement('button');
 
     if (gameOverState === true) {
         restart.textContent = 'Restart'
