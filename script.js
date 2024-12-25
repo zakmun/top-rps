@@ -87,6 +87,7 @@ function isGameOver () {
     if (humanScore === 5) {
        const winnerMsg = document.createElement('h2')
        winnerMsg.textContent = 'Congratutalations. You Won!';
+       winnerMsg.style.color = 'Green'
        choiceContainer.appendChild(winnerMsg);
        gameOverState = true;
        disableButtons()
@@ -94,6 +95,7 @@ function isGameOver () {
     } else if (computerScore === 5) {
        const winnerMsg = document.createElement('h2')
        winnerMsg.textContent = 'Unlucky. Computer won!';
+       winnerMsg.style.color = 'Red'
        choiceContainer.appendChild(winnerMsg)
        gameOverState = true;
        disableButtons()
