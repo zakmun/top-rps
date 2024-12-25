@@ -89,20 +89,22 @@ function isGameOver () {
        winnerMsg.textContent = 'Congratutalations. You Won!';
        choiceContainer.appendChild(winnerMsg);
        gameOverState = true;
+       disableButtons()
+
     } else if (computerScore === 5) {
        const winnerMsg = document.createElement('h2')
        winnerMsg.textContent = 'Unlucky. Computer won!';
        choiceContainer.appendChild(winnerMsg)
        gameOverState = true;
+       disableButtons()
     }
 }
 
-// function gameover () {
-//     if (isGameOver == true) {
-//         humanRock.disabled = true;
-
-//     }
-// }
+function disableButtons () {
+  humanRock.disabled = true;
+  humanPaper.disabled = true;
+  humanScissors.disabled = true;
+}
 
 // Playing entire game (5 rounds)
 // function playGame() {
