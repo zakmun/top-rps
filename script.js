@@ -76,9 +76,22 @@ function playRound(humanChoice, computerChoice) {
     } else if (humanChoice === 'paper' && computerChoice === s) {
         h4.textContent = `${computerChoice} beats ${humanChoice}. You lose! Human = ${humanScore} - Computer = ${++computerScore}`
     }
+
+    isGameOver()
 }
 
 
+function isGameOver () {
+    if (humanScore === 5) {
+       const winnerMsg = document.createElement('h2')
+       winnerMsg.textContent = 'Congratutalations. You Won!';
+       choiceContainer.appendChild(winnerMsg);
+    } else if (computerScore === 5) {
+       const winnerMsg = document.createElement('h2')
+       winnerMsg.textContent = 'Unlucky. Computer won!';
+       choiceContainer.appendChild(winnerMsg)
+    }
+}
 
 
 
