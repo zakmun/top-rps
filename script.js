@@ -5,8 +5,6 @@ const s = "scissors";
 let humanScore = 0;
 let computerScore = 0;
 
-gameOver = false;
-
 const humanRock = document.getElementById('human-rock')
 const humanPaper = document.getElementById('human-paper')
 const humanScissors = document.getElementById('human-scissors')
@@ -79,6 +77,7 @@ function playRound(humanChoice, computerChoice) {
         h4.textContent = `${computerChoice} beats ${humanChoice}. You lose! Human = ${humanScore} - Computer = ${++computerScore}`
     }
 }
+
 
 
 
