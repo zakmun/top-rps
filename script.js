@@ -115,10 +115,15 @@ function disableButtons () {
 
 function restartGame () {
 
+    const restart = document.createElement('BUTTON');
+
     if (gameOverState === true) {
-        const restart = document.createElement('BUTTON');
         restart.textContent = 'Restart'
         choiceContainer.appendChild(restart);
     } 
+
+    restart.addEventListener('click', () => {
+        location.reload()
+    })
 
 }
