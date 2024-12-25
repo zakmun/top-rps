@@ -5,6 +5,8 @@ const s = "scissors";
 let humanScore = 0;
 let computerScore = 0;
 
+
+
 const humanRock = document.getElementById('human-rock')
 const humanPaper = document.getElementById('human-paper')
 const humanScissors = document.getElementById('human-scissors')
@@ -93,7 +95,12 @@ function isGameOver () {
     }
 }
 
+// function gameover () {
+//     if (isGameOver == true) {
+//         humanRock.disabled = true;
 
+//     }
+// }
 
 // Playing entire game (5 rounds)
 // function playGame() {
